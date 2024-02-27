@@ -2,8 +2,8 @@
 
 # application title
 ## author
-  id : 66114540070
-  name : กันยารัตน์ บัวชุม
+  * id : 66114540070
+  * name : กันยารัตน์ บัวชุม
 ## technology: [pygame/streamlit]
 ## application description : รายละเอียดProject
 
