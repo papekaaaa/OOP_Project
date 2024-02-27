@@ -1,12 +1,12 @@
 # Project
 
 # application title
-author
+## author
   id : 66114540070
   name : กันยารัตน์ บัวชุม
-technology: [pygame/streamlit]
-application description :
+## technology: [pygame/streamlit]
+## application description : รายละเอียดProject
 
-  presentation: [slide/canva/etc..] link [public/ubu]
-  video: link [public/ubu]
+## presentation: [slide/canva/etc..] link [public/ubu]
+## video: link [public/ubu]
  xoxoxo
