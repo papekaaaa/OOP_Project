@@ -1,5 +1,5 @@
 import streamlit as st
-
+     
 st.title('1 วันควรกินเท่าไหร่ถึงจะพอนะ?')
 number_input = st.number_input('กรอกน้ำหนัก (กิโลกรัม) ' )
 c1_input = st.checkbox('ผู้ชาย')
