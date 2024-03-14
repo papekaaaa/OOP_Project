@@ -1,7 +1,7 @@
 import streamlit as st
      
 st.title('1 วันควรกินเท่าไหร่ถึงจะพอนะ?')
-number_input = st.number_input('กรอกน้ำหนัก (กิโลกรัม) ' )
+number_input = st.number_input('กรอกน้ำหนัก (กิโลกรัม) ')
 c1_input = st.checkbox('ผู้ชาย')
 c2_input = st.checkbox('ผู้หญิง ')
 select_box = st.selectbox('กรอกช่วงวัย', ['กรุณาเลือกช่วงวัย','เด็กอายุ 6-13 ปี', 'วัยรุ่น', 'วัยทำงาน','ผู้ใช้แรงงาน','ผู้สูงอายุ'])
@@ -53,33 +53,36 @@ elif c1_input  :
             ''',
             unsafe_allow_html=True
         )
-        st.image('Projectfood/kan/streamlit/พื้นหลัง.jpg')
+        st.image('อาหาร2.jpg')
+
         
     elif  select_box == 'เด็กอายุ 6-13 ปี' or select_box ==  'ผู้สูงอายุ':
           st.markdown(
-        '''
-        - ควรรับประทานอาหารปริมาณ 1,600 kcal ต่อวัน
-        - ข้าว-แป้ง = 8 ทัพพี
-        - ผัก = 4-6 ทัพพี (ผักดิบ 1 ถ้วยตวง หรือผักสุก 1/2 ถ้วยตวง)
-        - ผลไม้หวานน้อย = 3-4 ส่วน (1 ส่วน = ผลไม้ประมาณ 6-10 คำ)
-        - เนื้อสัตว์ = 6 ช้อนทานข้าว (1 ช้อน = 15 กรัม)
-        - นม 1-2 แก้ว (1 แก้ว = 240 มล.)
+            '''
+            - ควรรับประทานอาหารปริมาณ 1,600 kcal ต่อวัน
+            - ข้าว-แป้ง = 8 ทัพพี
+            - ผัก = 4-6 ทัพพี (ผักดิบ 1 ถ้วยตวง หรือผักสุก 1/2 ถ้วยตวง)
+            - ผลไม้หวานน้อย = 3-4 ส่วน (1 ส่วน = ผลไม้ประมาณ 6-10 คำ)
+            - เนื้อสัตว์ = 6 ช้อนทานข้าว (1 ช้อน = 15 กรัม)
+            - นม 1-2 แก้ว (1 แก้ว = 240 มล.)
 
-        <span style="color: orange;">ส่วนนี้ก็สำคัญ</span>
-            
-        - ปริมาณน้ำตาล 
+            <span style="color: orange;">ส่วนนี้ก็สำคัญ</span>
+                
+            - ปริมาณน้ำตาล 
 
-            เด็ก 4 ช้อนชา
-            ผู้ใหญ่ 6 ช้อนชา
-        - ปริมาณไขมัน 
+                เด็ก 4 ช้อนชา
+                ผู้ใหญ่ 6 ช้อนชา
+            - ปริมาณไขมัน 
 
-            ไม่เกิน 65 กรัม(ประมาณ 16 ช้อนชา)
-        - ปริมาณโซเดียม 
+                ไม่เกิน 65 กรัม(ประมาณ 16 ช้อนชา)
+            - ปริมาณโซเดียม 
 
-            ไม่เกิน 2300 มิลลิกรัม (ประมาณ 1 ช้อนชา)
-            ''',
-            unsafe_allow_html=True
+                ไม่เกิน 2300 มิลลิกรัม (ประมาณ 1 ช้อนชา)
+                ''',
+                unsafe_allow_html=True
         )
+          st.image('อาหาร1.jpg')
+
     else:    
           st.markdown(
         '''
@@ -105,6 +108,7 @@ elif c1_input  :
             ''',
             unsafe_allow_html=True
         )
+          st.image('อาหาร3.jpg')
           
 
 elif c2_input:
@@ -132,7 +136,9 @@ elif c2_input:
             ไม่เกิน 2300 มิลลิกรัม (ประมาณ 1 ช้อนชา)
             ''',
             unsafe_allow_html=True
-        )
+        ) 
+        st.image('อาหาร1.jpg')
+
     elif select_box == 'วัยรุ่น':
         st.markdown(
             '''
@@ -158,6 +164,8 @@ elif c2_input:
             ''',
             unsafe_allow_html=True
         )
+        st.image('อาหาร2.jpg')
+
     else:
           st.markdown(
         '''
@@ -183,6 +191,10 @@ elif c2_input:
             ''',
             unsafe_allow_html=True
         )
+          st.image('อาหาร3.jpg')
+          
+
+          
 elif c1_input and c2_input and select_box == 'กรุณาเลือกช่วงวัย'or select_box == 'วัยทำงาน' or select_box == 'เด็กอายุ 6-13 ปี'or select_box ==  'ผู้สูงอายุ ' or select_box == 'วัยรุ่น' or select_box == 'ผู้ใช้แรงงาน':
     if c1_input and c2_input:
         st.write('กรุณากรอกใหม่')
@@ -233,4 +245,4 @@ add_bg_from_local('พื้นหลัง3.jpg', 'http://localhost:8502/')
 
 
 
-# # streamlit run C:\Users\Asus\OneDrive\เดสก์ท็อป\oop\โปรเจค\Projectfood\kan\streamlit\food01.py
+# # streamlit run C:\Users\Asus\OneDrive\เดสก์ท็อป\oop\OOP_Project\food01.py
